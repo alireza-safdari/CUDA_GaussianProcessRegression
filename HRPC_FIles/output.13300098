@@ -1,0 +1,260 @@
+Sun Nov 29 09:34:09 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 440.95.01    Driver Version: 440.95.01    CUDA Version: 10.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K20m          On   | 00000000:20:00.0 Off |                    0 |
+| N/A   19C    P8    16W / 225W |     58MiB /  4743MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20m          On   | 00000000:8B:00.0 Off |                    0 |
+| N/A   37C    P8    16W / 225W |     56MiB /  4743MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0     19725      G   /usr/bin/Xorg                                 45MiB |
+|    1     19725      G   /usr/bin/Xorg                                 43MiB |
++-----------------------------------------------------------------------------+
+TEST
+stage3.cu(125): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(151): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(159): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(190): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(259): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(273): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(268): warning: variable "nColumnForMemoryRead" was declared but never referenced
+
+stage3.cu(282): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(297): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(305): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(434): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(443): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(461): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(470): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(477): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(605): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(614): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(633): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(642): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(649): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(765): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(774): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(793): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(918): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(924): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(926): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(928): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(930): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(932): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(934): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(936): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(941): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1032): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1040): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1041): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1042): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1043): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1044): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1045): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1046): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1051): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(911): warning: variable "print" was declared but never referenced
+
+stage3.cu(125): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(151): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(159): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(190): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(259): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(273): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(282): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(297): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(305): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(434): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(443): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(461): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(470): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(477): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(605): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(614): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(633): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(642): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(649): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(765): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(774): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(793): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(918): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(924): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(926): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(928): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(930): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(932): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(934): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(936): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(941): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1032): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1040): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1041): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1042): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1043): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1044): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1045): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1046): warning: conversion from a string literal to "char *" is deprecated
+
+stage3.cu(1051): warning: conversion from a string literal to "char *" is deprecated
+
+nT/B: 256, Shared M: 25, nStream: 35.
+Total time = 0.018794 seconds, Predicted Value = 1.006370/home/alireza.safdari/.lsbatch/1606653016.13300098.shell: line 32: syntax error near unexpected token `for'
+/home/alireza.safdari/.lsbatch/1606653016.13300098.shell: line 32: `for SHARED_MEMORY_SIZE in 5 15 25 50 75 100'
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu64-3005>
+Subject: Job 13300098: <GPUStage3> in cluster <Main_Compute> Exited
+
+Job <GPUStage3> was submitted from host <login7> by user <alireza.safdari> in cluster <Main_Compute>.
+Job was executed on host(s) <20*gpu64-3005>, in queue <sn_short>, as user <alireza.safdari> in cluster <Main_Compute>.
+</home/alireza.safdari> was used as the home directory.
+</scratch/user/alireza.safdari> was used as the working directory.
+Started at Sun Nov 29 09:34:04 2020
+Results reported on Sun Nov 29 09:34:15 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 20 -R 'select[gpu] rusage[mem=2000] span[ptile=20]' -M 2000
+#BSUB -J GPUStage3 -o output.%J -L /bin/bash -W 0:1
+##
+##NECESSARY JOB SPECIFICATIONS
+##BSUB -J JobName             # Set the job name to "JobName"
+##BSUB -L /bin/bash           # Uses the bash login shell to initialize the job's execution environment.
+##BSUB -W hh:mm               # Sets job's runtime wall-clock limit in hours:minutes or just minutes (-mm)
+##BSUB -n NNN                 # NNN: total number of cores/jobslots to allocate for the job
+##BSUB -R "select[node-type]" # Select node-type: nxt, mem256gb, gpu, phi, mem1t, mem2t ...
+##BSUB -R "span[ptile=XX]"    # XX:  number of cores/jobslots per node to use. Also, a node selection criterion.
+##BSUB -R "rusage[mem=nnn]"   # Reserves nnn MBs per process/CPU for the job
+##BSUB -M mm                  # Sets the per process enforceable memory limit to nnn MB
+##BSUB -o OUTPUTFILE.%J       # Send stdout and stderr to "OUTPUTFILE.[jobID]"
+#
+# <--- at this point the current working directory is the one you submitted the job from.
+#
+module load intel/2017A  CUDA     # load Intel software stack 
+#
+#
+
+nvidia-smi
+
+echo "TEST"
+nvcc -arch=compute_35 -code=sm_35 -ccbin=icc -o stage3.exe stage3.cu
+
+./stage3.exe 10 0.5 0.5
+
+declare -i gridM=5
+declare predictionPointX=0.5
+declare predictionPointY=0.5
+for N_THREADS_PER_BLOCK in 128 256 512 1024 16
+for SHARED_MEMORY_SIZE in 5 15 25 50 75 100
+for N_STREAM in 1 2 4 8 13 26 32 39 32
+do
+
+done
+done
+done
+
+------------------------------------------------------------
+
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time :                                   5.58 sec.
+    Max Memory :                                 152 MB
+    Average Memory :                             61.00 MB
+    Total Requested Memory :                     40000.00 MB
+    Delta Memory :                               39848.00 MB
+    Max Processes :                              5
+    Max Threads :                                6
+
+The output (if any) is above this job summary.
+

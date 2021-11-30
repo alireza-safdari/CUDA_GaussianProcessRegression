@@ -1,0 +1,38 @@
+#BSUB -n 20 -R 'select[gpu] rusage[mem=2000] span[ptile=20]' -M 2000
+#BSUB -J GPUStage3 -o output.%J -L /bin/bash -W 0:30
+##
+##NECESSARY JOB SPECIFICATIONS
+##BSUB -J JobName             # Set the job name to "JobName"
+##BSUB -L /bin/bash           # Uses the bash login shell to initialize the job's execution environment.
+##BSUB -W hh:mm               # Sets job's runtime wall-clock limit in hours:minutes or just minutes (-mm)
+##BSUB -n NNN                 # NNN: total number of cores/jobslots to allocate for the job
+##BSUB -R "select[node-type]" # Select node-type: nxt, mem256gb, gpu, phi, mem1t, mem2t ...
+##BSUB -R "span[ptile=XX]"    # XX:  number of cores/jobslots per node to use. Also, a node selection criterion.
+##BSUB -R "rusage[mem=nnn]"   # Reserves nnn MBs per process/CPU for the job
+##BSUB -M mm                  # Sets the per process enforceable memory limit to nnn MB
+##BSUB -o OUTPUTFILE.%J       # Send stdout and stderr to "OUTPUTFILE.[jobID]"
+#
+# <--- at this point the current working directory is the one you submitted the job from.
+#
+module load intel/2017A  CUDA     # load Intel software stack 
+#
+#
+
+nvidia-smi
+
+echo "TEST"
+nvcc -arch=compute_35 -code=sm_35 -ccbin=icc -o stage3.exe stage3.cu
+
+./stage3.exe 10 0.5 0.5
+
+declare -i gridM=5
+declare predictionPointX=0.5
+declare predictionPointY=0.5
+for N_THREADS_PER_BLOCK in 128 256 512 1024 16
+for SHARED_MEMORY_SIZE in 5 15 25 50 75 100
+for N_STREAM in 1 2 4 8 13 26 32 39 32
+do
+
+done
+done
+done

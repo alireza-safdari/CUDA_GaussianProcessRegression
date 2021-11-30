@@ -1,0 +1,541 @@
+Wed Dec  2 19:24:11 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 440.95.01    Driver Version: 440.95.01    CUDA Version: 10.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K20m          On   | 00000000:20:00.0 Off |                    0 |
+| N/A   22C    P8    25W / 225W |     28MiB /  4743MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20m          On   | 00000000:8B:00.0 Off |                    0 |
+| N/A   16C    P8    16W / 225W |     56MiB /  4743MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0     10452      G   /usr/bin/Xorg                                 15MiB |
+|    1     10452      G   /usr/bin/Xorg                                 43MiB |
++-----------------------------------------------------------------------------+
+TEST 1 LUStage15.exe
+LUStage15.cu(281): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(295): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(319): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(327): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(443): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(457): warning: expression has no effect
+
+LUStage15.cu(459): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(481): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(524): warning: expression has no effect
+
+LUStage15.cu(526): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(549): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(589): warning: statement is unreachable
+
+LUStage15.cu(654): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(657): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(281): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(295): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(319): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(327): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(443): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(457): warning: expression has no effect
+
+LUStage15.cu(459): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(481): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(524): warning: expression has no effect
+
+LUStage15.cu(526): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(549): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(589): warning: statement is unreachable
+
+LUStage15.cu(654): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage15.cu(657): warning: conversion from a string literal to "char *" is deprecated
+
+------------------------------------------------------------
+Number of GPU devices found = 2
+[Device: 0] Compute Capability 3.5.
+ ... multiprocessor count  = 13
+ ... max threads per multiprocessor = 2048
+ ... max threads per block = 1024
+ ... max block dimension   = 1024, 1024, 64 (along x, y, z)
+ ... max grid size         = 2147483647, 65535, 65535 (along x, y, z)
+ ... warp size             = 32
+ ... clock rate            = 705 MHz
+[Device: 1] Compute Capability 3.5.
+ ... multiprocessor count  = 13
+ ... max threads per multiprocessor = 2048
+ ... max threads per block = 1024
+ ... max block dimension   = 1024, 1024, 64 (along x, y, z)
+ ... max grid size         = 2147483647, 65535, 65535 (along x, y, z)
+ ... warp size             = 32
+ ... clock rate            = 705 MHz
+------------------------------------------------------------
+GPU has created 35 streams
+
+
+Complete test for Matrix size 200 X 200
+CPU Begins:
+Computing LU a 200 X 200 matrix by CPU took: 3.394 ms
+GPU Begins:
+1) Copying a 200 X 200 matrix (# bytes: 160000) from RAM to GPU: took 0.161472ms
+2) Computing LU for 200 X 200 matrix by #thread/block: 256 and Shared Memory Size: 256 float: GPU took 36.659424ms
+3) Copying a 200 X 200 matrix (# bytes: 160000) from GPU to RAM: took 0.082400 ms
+Comparing Result:
+Lower Matrix Match? false
+Upper Matrix Match? false
+
+
+Complete test for Matrix size 1500 X 1500
+CPU Begins:
+Computing LU a 1500 X 1500 matrix by CPU took: 379.417 ms
+GPU Begins:
+1) Copying a 1500 X 1500 matrix (# bytes: 9000000) from RAM to GPU: took 2.848672ms
+2) Computing LU for 1500 X 1500 matrix by #thread/block: 256 and Shared Memory Size: 256 float: GPU took 1127.209106ms
+3) Copying a 1500 X 1500 matrix (# bytes: 9000000) from GPU to RAM: took 2.231616 ms
+Comparing Result:
+Lower Matrix Match? false
+Upper Matrix Match? false
+TEST 2 LUStage16.exe
+LUStage16.cu(255): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(269): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(264): warning: variable "nColumnForMemoryRead" was declared but never referenced
+
+LUStage16.cu(278): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(293): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(301): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(415): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(431): warning: expression has no effect
+
+LUStage16.cu(433): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(456): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(497): warning: expression has no effect
+
+LUStage16.cu(499): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(522): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(624): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(627): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(255): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(269): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(278): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(293): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(301): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(415): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(431): warning: expression has no effect
+
+LUStage16.cu(433): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(456): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(497): warning: expression has no effect
+
+LUStage16.cu(499): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(522): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(624): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage16.cu(627): warning: conversion from a string literal to "char *" is deprecated
+
+------------------------------------------------------------
+Number of GPU devices found = 2
+[Device: 0] Compute Capability 3.5.
+ ... multiprocessor count  = 13
+ ... max threads per multiprocessor = 2048
+ ... max threads per block = 1024
+ ... max block dimension   = 1024, 1024, 64 (along x, y, z)
+ ... max grid size         = 2147483647, 65535, 65535 (along x, y, z)
+ ... warp size             = 32
+ ... clock rate            = 705 MHz
+[Device: 1] Compute Capability 3.5.
+ ... multiprocessor count  = 13
+ ... max threads per multiprocessor = 2048
+ ... max threads per block = 1024
+ ... max block dimension   = 1024, 1024, 64 (along x, y, z)
+ ... max grid size         = 2147483647, 65535, 65535 (along x, y, z)
+ ... warp size             = 32
+ ... clock rate            = 705 MHz
+------------------------------------------------------------
+GPU has created 35 streams
+
+
+Complete test for Matrix size 200 X 200
+CPU Begins:
+Computing LU a 200 X 200 matrix by CPU took: 3.364 ms
+GPU Begins:
+1) Copying a 200 X 200 matrix (# bytes: 160000) from RAM to GPU: took 0.158208ms
+2) Computing LU for 200 X 200 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 16.050913ms
+3) Copying a 200 X 200 matrix (# bytes: 160000) from GPU to RAM: took 0.080800 ms
+Comparing Result:
+Lower Matrix Match? false
+Upper Matrix Match? false
+
+
+Complete test for Matrix size 1500 X 1500
+CPU Begins:
+Computing LU a 1500 X 1500 matrix by CPU took: 871.207 ms
+GPU Begins:
+1) Copying a 1500 X 1500 matrix (# bytes: 9000000) from RAM to GPU: took 2.883168ms
+2) Computing LU for 1500 X 1500 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 1029.743164ms
+3) Copying a 1500 X 1500 matrix (# bytes: 9000000) from GPU to RAM: took 2.307648 ms
+Comparing Result:
+Lower Matrix Match? false
+Upper Matrix Match? false
+
+Timing test for Matrix size 100 X 100
+Computing LU for 100 X 100 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 5.891232ms
+Computing LU for 100 X 100 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 5.785248ms
+Computing LU for 100 X 100 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 5.804128ms
+
+Timing test for Matrix size 500 X 500
+Computing LU for 500 X 500 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 75.126785ms
+Computing LU for 500 X 500 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 74.555740ms
+Computing LU for 500 X 500 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 74.583839ms
+
+Timing test for Matrix size 1000 X 1000
+Computing LU for 1000 X 1000 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 359.677582ms
+Computing LU for 1000 X 1000 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 358.755646ms
+Computing LU for 1000 X 1000 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 359.112091ms
+
+Timing test for Matrix size 2000 X 2000
+Computing LU for 2000 X 2000 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 2263.064697ms
+Computing LU for 2000 X 2000 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 2262.525879ms
+Computing LU for 2000 X 2000 matrix by #thread/block: 256 and Shared Memory Size: 25 float: GPU took 2263.136719ms
+GPU has released 35 streams
+TEST 3 LUStage17.exe
+LUStage17.cu(267): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage17.cu(280): warning: conversion from a string literal to "char *" is deprecated
+
+LUStage17.cu(288): error: expected a declaration
+
+LUStage17.cu(311): warning: parsing restarts here after previous syntax error
+
+LUStage17.cu(312): error: expected a declaration
+
+LUStage17.cu(340): warning: parsing restarts here after previous syntax error
+
+LUStage17.cu(341): error: expected a declaration
+
+LUStage17.cu(383): warning: parsing restarts here after previous syntax error
+
+LUStage17.cu(384): error: expected a declaration
+
+LUStage17.cu(419): warning: parsing restarts here after previous syntax error
+
+LUStage17.cu(420): error: expected a declaration
+
+LUStage17.cu(427): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(427): error: declaration is incompatible with "void generateSquareMatrix(float *, uint64_t)"
+(59): here
+
+LUStage17.cu(427): error: a value of type "float *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(427): error: expected a ")"
+
+LUStage17.cu(432): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(433): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(433): error: declaration is incompatible with "int printf(const char *, ...)"
+/sw/eb/software/CUDA/10.0.130/include/crt/common_functions.h(145): here
+
+LUStage17.cu(433): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(433): error: expected a ")"
+
+LUStage17.cu(434): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(435): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(436): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(436): error: no instance of overloaded function "cudaMalloc" matches the argument list
+            argument types are: (int *, int)
+
+LUStage17.cu(437): error: expected a declaration
+
+LUStage17.cu(440): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(440): error: declaration is incompatible with "void duplicateSquareMatrix(const float *, float *, uint64_t)"
+(73): here
+
+LUStage17.cu(440): error: a value of type "float *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(440): error: expected a ")"
+
+LUStage17.cu(443): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(443): error: variable "printf" has already been defined
+
+LUStage17.cu(443): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(445): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(445): error: declaration is incompatible with "int gettimeofday(timeval *, timezone *)"
+/usr/include/sys/time.h(73): here
+
+LUStage17.cu(445): error: identifier "start" is undefined
+
+LUStage17.cu(445): error: expected a ")"
+
+LUStage17.cu(446): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(446): error: declaration is incompatible with "void computeLUMatrix(float *, float *, float *, uint64_t)"
+(156): here
+
+LUStage17.cu(446): error: a value of type "float *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(446): error: expected a ")"
+
+LUStage17.cu(448): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(448): error: variable "gettimeofday" has already been defined
+
+LUStage17.cu(448): error: identifier "stop" is undefined
+
+LUStage17.cu(448): error: expected a ")"
+
+LUStage17.cu(450): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(451): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(451): error: variable "printf" has already been defined
+
+LUStage17.cu(451): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(451): error: expected a ")"
+
+LUStage17.cu(453): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(453): error: declaration is incompatible with "std::ostream std::cout"
+/general/software/x86_64/easybuild/software/GCCcore/6.3.0/bin/../include/c++/6.3.0/iostream(61): here
+
+LUStage17.cu(453): error: expected a ";"
+
+LUStage17.cu(457): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(457): error: variable "printf" has already been defined
+
+LUStage17.cu(457): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(458): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(458): error: declaration is incompatible with "cudaError_t cudaEventRecord(cudaEvent_t, cudaStream_t)"
+/sw/eb/software/CUDA/10.0.130/include/cuda_runtime_api.h(2637): here
+
+LUStage17.cu(458): error: identifier "startGpu" is undefined
+
+LUStage17.cu(458): error: expected a ")"
+
+LUStage17.cu(459): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(459): error: variable "errorCode" has already been defined
+
+LUStage17.cu(459): error: argument of type "int" is incompatible with parameter of type "void *"
+
+LUStage17.cu(460): error: expected a declaration
+
+LUStage17.cu(461): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(461): error: variable "cudaEventRecord" has already been defined
+
+LUStage17.cu(461): error: identifier "stopGpu" is undefined
+
+LUStage17.cu(461): error: expected a ")"
+
+LUStage17.cu(462): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(462): error: declaration is incompatible with "cudaError_t cudaEventSynchronize(cudaEvent_t)"
+/sw/eb/software/CUDA/10.0.130/include/cuda_runtime_api.h(2698): here
+
+LUStage17.cu(463): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(463): error: declaration is incompatible with "cudaError_t cudaEventElapsedTime(float *, cudaEvent_t, cudaEvent_t)"
+/sw/eb/software/CUDA/10.0.130/include/cuda_runtime_api.h(2768): here
+
+LUStage17.cu(463): error: identifier "gpuTime" is undefined
+
+LUStage17.cu(463): error: expected a ")"
+
+LUStage17.cu(464): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(464): error: variable "printf" has already been defined
+
+LUStage17.cu(464): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(464): error: expected a ")"
+
+LUStage17.cu(466): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(466): error: variable "cudaEventRecord" has already been defined
+
+LUStage17.cu(466): error: expected a ")"
+
+LUStage17.cu(467): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(467): error: declaration is incompatible with "void computeLUMatrixGpuCompact(float *, uint32_t, uint32_t)"
+(250): here
+
+LUStage17.cu(467): error: expected a ")"
+
+LUStage17.cu(468): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(468): error: variable "cudaEventRecord" has already been defined
+
+LUStage17.cu(468): error: expected a ")"
+
+LUStage17.cu(469): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(469): error: variable "cudaEventSynchronize" has already been defined
+
+LUStage17.cu(470): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(470): error: variable "cudaEventElapsedTime" has already been defined
+
+LUStage17.cu(470): error: expected a ")"
+
+LUStage17.cu(471): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(471): error: variable "printf" has already been defined
+
+LUStage17.cu(471): error: a value of type "const char *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(471): error: expected a ")"
+
+LUStage17.cu(473): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(473): error: variable "cudaEventRecord" has already been defined
+
+LUStage17.cu(473): error: expected a ")"
+
+LUStage17.cu(474): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(474): error: declaration is incompatible with "cudaError_t cudaMemcpy(void *, const void *, size_t, cudaMemcpyKind)"
+/sw/eb/software/CUDA/10.0.130/include/cuda_runtime_api.h(5303): here
+
+LUStage17.cu(474): error: a value of type "float *" cannot be used to initialize an entity of type "int"
+
+LUStage17.cu(474): error: expected a ")"
+
+LUStage17.cu(475): error: this declaration has no storage class or type specifier
+
+LUStage17.cu(475): error: variable "cudaEventRecord" has already been defined
+
+LUStage17.cu(475): error: expected a ")"
+
+LUStage17.cu(476): error: this declaration has no storage class or type specifier
+
+Error limit reached.
+100 errors detected in the compilation of "/work/13384305.tmpdir/tmpxft_000051f1_00000000-10_LUStage17.cpp1.ii".
+Compilation terminated.
+/home/alireza.safdari/.lsbatch/1606958140.13384305.shell: line 34: ./LUStage17.exe: No such file or directory
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu64-3001>
+Subject: Job 13384305: <GPUStage15> in cluster <Main_Compute> Exited
+
+Job <GPUStage15> was submitted from host <login8> by user <alireza.safdari> in cluster <Main_Compute>.
+Job was executed on host(s) <20*gpu64-3001>, in queue <sn_short>, as user <alireza.safdari> in cluster <Main_Compute>.
+</home/alireza.safdari> was used as the home directory.
+</scratch/user/alireza.safdari> was used as the working directory.
+Started at Wed Dec  2 19:24:05 2020
+Results reported on Wed Dec  2 19:24:33 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 20 -R 'select[gpu] rusage[mem=2000] span[ptile=20]' -M 20000
+#BSUB -J GPUStage15 -o output.%J -L /bin/bash -W 0:45
+##
+##NECESSARY JOB SPECIFICATIONS
+##BSUB -J JobName             # Set the job name to "JobName"
+##BSUB -L /bin/bash           # Uses the bash login shell to initialize the job's execution environment.
+##BSUB -W hh:mm               # Sets job's runtime wall-clock limit in hours:minutes or just minutes (-mm)
+##BSUB -n NNN                 # NNN: total number of cores/jobslots to allocate for the job
+##BSUB -R "select[node-type]" # Select node-type: nxt, mem256gb, gpu, phi, mem1t, mem2t ...
+##BSUB -R "span[ptile=XX]"    # XX:  number of cores/jobslots per node to use. Also, a node selection criterion.
+##BSUB -R "rusage[mem=nnn]"   # Reserves nnn MBs per process/CPU for the job
+##BSUB -M mm                  # Sets the per process enforceable memory limit to nnn MB
+##BSUB -o OUTPUTFILE.%J       # Send stdout and stderr to "OUTPUTFILE.[jobID]"
+#
+# <--- at this point the current working directory is the one you submitted the job from.
+#
+module load intel/2017A  CUDA     # load Intel software stack 
+#
+#
+
+nvidia-smi
+
+echo "TEST 1 LUStage15.exe"
+nvcc -arch=compute_35 -code=sm_35 -ccbin=icc -o LUStage15.exe LUStage15.cu
+./LUStage15.exe
+
+echo "TEST 2 LUStage16.exe"
+nvcc -arch=compute_35 -code=sm_35 -ccbin=icc -o LUStage16.exe LUStage16.cu
+./LUStage16.exe
+
+
+echo "TEST 3 LUStage17.exe"
+nvcc -arch=compute_35 -code=sm_35 -ccbin=icc -o LUStage17.exe LUStage17.cu
+./LUStage17.exe
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time :                                   21.92 sec.
+    Max Memory :                                 214 MB
+    Average Memory :                             106.00 MB
+    Total Requested Memory :                     40000.00 MB
+    Delta Memory :                               39786.00 MB
+    Max Processes :                              6
+    Max Threads :                                8
+
+The output (if any) is above this job summary.
+
